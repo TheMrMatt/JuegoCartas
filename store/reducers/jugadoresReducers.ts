@@ -14,6 +14,7 @@ export const JugadoresReducers = (state: InicialJugadores, action: Action) => {
             return {
                 ...state,
                 jugadores: action.payload,
+                turno: action.payload[0],
                 loading: false
             }
         case 'TABLE':

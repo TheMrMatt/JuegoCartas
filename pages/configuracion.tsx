@@ -5,7 +5,7 @@ import { useContext, useEffect } from 'react'
 import { JugadoresContext } from '../store/context/jugadoresContext'
 import { JuegoContext } from '../store/context/juego'
 
-const configuracion = () => {
+const Configuracion = () => {
     const { traerCarta } = useContext(JuegoContext)
 
     useEffect(() => {
@@ -19,4 +19,4 @@ const configuracion = () => {
     )
 }
 
-export default configuracion
+export default Configuracion

@@ -7,7 +7,7 @@ import { JugadoresContext } from '../store/context/jugadoresContext';
 import { IoSkull } from "react-icons/io5";
 
 
-const partida = () => {
+const Partida = () => {
 
     const { carta, mazo, loading, ultimaCarta, count } = useContext(JuegoContext)
     const { jugadores, setGanador, turno } = useContext(JugadoresContext)
@@ -28,7 +28,7 @@ const partida = () => {
         </div>
         <div className={styles.col2}>
             <div className={styles.jugador}>
-                Lee: {turno.alias != '' ? turno.alias : jugadores[0].alias}
+                Lee: {turno.alias}
             </div>
             <div className={styles.cartacontainer}>
                 <div className={styles.carta}>
@@ -56,7 +56,7 @@ const partida = () => {
                 <tbody>
 
                     {
-                        jugadores.map(jugador => <tr className={styles.trow}>
+                        jugadores.map(jugador => <tr key={jugador.alias} className={styles.trow}>
                             <th className={styles.player}>
                                 {jugador.alias}
                             </th>
@@ -77,4 +77,4 @@ const partida = () => {
     </div>;
 };
 
-export default partida;
+export default Partida;

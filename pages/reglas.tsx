@@ -1,7 +1,7 @@
 
 import styles from '../styles/Home.module.css'
 
-const reglas = () => {
+const Reglas = () => {
     return (
         <div className={styles.container}>
             <div className={styles.wrapper}>
@@ -11,4 +11,4 @@ const reglas = () => {
     )
 }
 
-export default reglas
+export default Reglas

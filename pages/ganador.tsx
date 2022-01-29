@@ -5,7 +5,7 @@ import { useContext } from 'react';
 import { JugadoresContext } from '../store/context/jugadoresContext';
 import { JuegoContext } from '../store/context/juego';
 
-const ganador = () => {
+const Ganador = () => {
     const { ganador, resetJ } = useContext(JugadoresContext)
     const { reset } = useContext(JuegoContext)
 
@@ -27,4 +27,4 @@ const ganador = () => {
     </div>;
 };
 
-export default ganador;
+export default Ganador;

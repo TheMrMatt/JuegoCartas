@@ -5,7 +5,7 @@ import { useContext, useState } from 'react';
 import { JugadoresContext } from '../store/context/jugadoresContext';
 import { JuegoContext } from '../store/context/juego';
 
-const eleccion = () => {
+const Eleccion = () => {
 
     const { jugadores, setGanador, rotacion } = useContext(JugadoresContext)
     const { mazo, ultimaRonda, sacarCarta, startLoading, ultimaCarta } = useContext(JuegoContext)
@@ -53,4 +53,4 @@ const eleccion = () => {
     </div>;
 };
 
-export default eleccion;
+export default Eleccion;
