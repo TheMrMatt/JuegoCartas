@@ -1,11 +1,11 @@
-import type { NextPage } from 'next'
+
 import styles from '../styles/Ganador.module.css'
 import Link from 'next/link'
 import { useContext } from 'react';
 import { JugadoresContext } from '../store/context/jugadoresContext';
 import { JuegoContext } from '../store/context/juego';
 
-const ganador: NextPage = () => {
+const ganador = () => {
     const { ganador, resetJ } = useContext(JugadoresContext)
     const { reset } = useContext(JuegoContext)
 

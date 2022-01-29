@@ -1,4 +1,4 @@
-import type { NextPage } from 'next'
+
 import styles from '../styles/Partida.module.css'
 import Link from 'next/link'
 import { useContext } from 'react';
@@ -7,7 +7,7 @@ import { JugadoresContext } from '../store/context/jugadoresContext';
 import { IoSkull } from "react-icons/io5";
 
 
-const partida: NextPage = () => {
+const partida = () => {
 
     const { carta, mazo, loading, ultimaCarta, count } = useContext(JuegoContext)
     const { jugadores, setGanador, turno } = useContext(JugadoresContext)

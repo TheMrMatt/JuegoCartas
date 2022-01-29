@@ -1,4 +1,4 @@
-import type { NextPage } from 'next'
+
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -7,7 +7,7 @@ import { JuegoContext } from '../store/context/juego'
 import styles from '../styles/Home.module.css'
 
 
-const Home: NextPage = () => {
+const Home = () => {
 
   const { traerCarta, loading, mazo } = useContext(JuegoContext)
 
