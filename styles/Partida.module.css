@@ -1,0 +1,325 @@
+.bwrapp{
+    width: 80%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.button{
+    width: 150px;
+    height: 40px;
+    background-color: black;
+    border: 2px solid #FDD935;
+    transition-timing-function: cubic-bezier(.86,.01,.15,.99);
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.button:hover{
+    color: black;
+    border: 2px solid black;
+    background-color: #FDD935;
+    transition: all 0.5s ease-in-out;
+}
+
+@media (min-width: 320px) {
+    .container{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }    
+
+    .col1{
+        width: 25%;
+        min-height: 100vh;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px;    
+    }
+
+    .col2{
+        width: 90%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        
+    }
+    .cartacontainer{
+        width: 80%;
+        margin: 50px 0px 50px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .carta{
+        width: 100%;
+        max-width: 300px;
+        height: 400px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #FDD935;
+    }
+    
+    .pregunta{
+    
+    }
+    .pie{
+        width: 100%;
+        height: 60px;    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+       
+    }
+
+    .col3{
+        width: 90%;
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        
+    }
+
+    .puntaje{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tabla{
+        width: 100%;
+        max-width: 400px;
+    
+        margin-top: 15px;
+        border: 1px solid #FDD935;
+    }
+    
+    .trow{
+        height: 50px;
+        border-bottom: 1px solid blue;
+    }
+    
+    .player{
+        height: 50px;
+        padding: 15px;
+        display: flex;
+        align-items:  center;
+        justify-content: flex-start;
+    }
+    
+    .puntaje{
+        display: flex;
+        align-items:  center;
+        justify-content: center;
+    }
+    .col4{
+        width: 90%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+}
+
+
+@media (min-width: 900px) {
+    .container{
+        width: 100%;
+       
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .col1{
+        width: 25%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px;    
+    }
+    
+    .col2{
+        width: 50%;
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        
+    }
+    
+    .col3{
+        width: 25%;
+       
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 20px;
+        
+    }
+    .col4{
+        width: 90%;
+        
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+}
+
+@media  (min-width: 1200px){
+    .container{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .col1{
+        width: 25%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px;    
+    }
+    
+    .col2{
+        width: 50%;
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        
+    }
+    
+    .col3{
+        width: 25%;
+       
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 20px;
+        
+    }
+    .col4{
+        width: 90%;
+        
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    
+    .jugador{
+        width: 80%;
+        height: 100px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    
+    }
+    
+    .cartacontainer{
+        width: 80%;
+        margin: 50px 0px 50px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .carta{
+        max-width: 400px;
+        height: 500px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #FDD935;
+    }
+    
+    .pregunta{
+    
+    }
+    .pie{
+        width: 100%;
+        height: 60px;    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+       
+    }
+    
+   
+    
+    .puntaje{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        
+    }
+    
+    .tabla{
+        width: 90%;
+        
+    
+        margin-top: 15px;
+        border: 1px solid #FDD935;
+    }
+    
+    .trow{
+        height: 50px;
+        border-bottom: 1px solid blue;
+    }
+    
+    .player{
+        height: 50px;
+        padding: 15px;
+        display: flex;
+        align-items:  center;
+        justify-content: flex-start;
+    }
+    
+    .puntaje{
+        display: flex;
+        align-items:  center;
+        justify-content: center;
+    }
+}
