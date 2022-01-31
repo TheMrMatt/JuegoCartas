@@ -51,7 +51,7 @@ const Input = () => {
                     jugadores.map(jugador => <div key={jugador.alias}>{jugador.alias}</div>)
                 }
             </div>
-            <button className={styles.button} onClick={() => continuar()}><Link href='/partida'>Continuar</Link></button>
+            <Link href='/partida'><button className={styles.button} onClick={() => continuar()}>Continuar</button></Link>
 
         </div>
     )

@@ -23,7 +23,7 @@ const Ganador = () => {
                 ganador.alias
             }
         </div>
-        <button className={styles.button}><Link href='/'>Continuar</Link></button>
+        <Link href='/'><button className={styles.button}>Continuar</button></Link>
     </div>;
 };
 

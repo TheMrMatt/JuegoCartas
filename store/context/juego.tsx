@@ -61,7 +61,7 @@ export const JuegoProvider = ({ children }: props) => {
         let max = state.mazo.length;
         let min = 0;
         const indice = Math.floor((Math.random() * (max - min + 1)) + min)
-        const cart = state.mazo.splice(indice, 5)
+        const cart = state.mazo.splice(indice, 1)
 
 
         dispatch({

@@ -9,12 +9,14 @@ import { IoSkull } from "react-icons/io5";
 
 const Partida = () => {
 
-    const { carta, mazo, loading, ultimaCarta, count } = useContext(JuegoContext)
-    const { jugadores, setGanador, turno } = useContext(JugadoresContext)
-    console.log(turno.alias);
+    const { carta, mazo, loading, ultimaCarta, count, reset } = useContext(JuegoContext)
+    const { jugadores, setGanador, turno, resetJ } = useContext(JugadoresContext)
+    console.log('turno: ', turno.alias);
 
     const handlerClick = () => {
         setGanador(jugadores)
+        reset();
+        resetJ();
     }
 
     if (loading) {
@@ -23,7 +25,7 @@ const Partida = () => {
     return <div className={styles.container}>
         <div className={styles.col1}>
             <div className={styles.bwrapp}>
-                <button className={styles.button} onClick={() => handlerClick()}><Link href='/ganador'>Terminar</Link></button>
+                <Link href='/ganador'><button className={styles.button} onClick={() => handlerClick()}>Terminar</button></Link>
             </div>
         </div>
         <div className={styles.col2}>
@@ -45,7 +47,7 @@ const Partida = () => {
 
             </div>
             <div className={styles.bwrapp}>
-                <button className={styles.button}><Link href='/eleccion'>Continuar</Link></button>
+                <Link href='/eleccion'><button className={styles.button}>Continuar</button></Link>
             </div>
         </div>
         <div className={styles.col3}>
@@ -71,7 +73,7 @@ const Partida = () => {
         </div>
         <div className={styles.col4}>
             <div className={styles.bwrapp}>
-                <button className={styles.button} onClick={() => handlerClick()}><Link href='/ganador'>Terminar</Link></button>
+                <Link href='/ganador'><button className={styles.button} onClick={() => handlerClick()}>Terminar</button></Link>
             </div>
         </div>
     </div>;
